@@ -4,7 +4,7 @@ import Media from './Media';
 
 const LeftBanner = () => {
     const [text] = useTypewriter({
-      words: ["Professional Coder.", "Full Stack Developer.", "UI Designer."],
+      words: ["Coder.", "Full Stack Developer.", "UI Designer.", "Software Engineer."],
       loop: true,
       typeSpeed: 20,
       deleteSpeed: 10,
@@ -26,12 +26,12 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          I use animation as a third dimension by which to simplify experiences
-          and kuiding thro each and every interaction. I'm not adding motion
-          just to spruce things up, but doing it in ways that.
+        I'm a computer science undergraduate student at the University of Colombo School of Computing (UCSC), a software development enthusiast with abackground in both computer science and software engineering. 
+        My journey in computer science began with a fascination for technology's ability to solve complex problems.
+        As a hardworking individual who quickly adapts to newtechnologies, I am eager to improve my technical and professional skills both individually and in groups.
+        Outside of coding, I enjoy hiking and volunteering at local coding events to inspire the next generation of tech enthusiasts.
         </p>
       </div>
-     {/* Media */}
      <Media />
     </div>
   );

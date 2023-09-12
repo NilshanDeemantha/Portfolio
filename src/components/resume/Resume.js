@@ -1,19 +1,18 @@
-import React, {  useState } from 'react'
-import Title from '../layouts/Title';
-import Education from './Education';
-import Skills from './Skills';
-import Achievement from './Achievement';
-import Experience from "./Experience"
+import React, { useState } from "react";
+import Title from "../layouts/Title";
+import Education from "./Education";
+import Skills from "./Skills";
+import Achievement from "./Achievement";
+import Experience from "./Experience";
 
 const Resume = () => {
-   const [educationData, setEducationData] = useState(true);
-   const [skillData, setSkillData] = useState(false);
-   const [experienceData, setExperienceData] = useState(false);
-   const [achievementData, setAchievementData] = useState(false);
+  const [educationData, setEducationData] = useState(true);
+  const [skillData, setSkillData] = useState(false);
+  const [experienceData, setExperienceData] = useState(false);
+  const [achievementData, setAchievementData] = useState(false);
   return (
     <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
       <div className="flex justify-center items-center text-center">
-        <Title title="7+ YEARS OF EXPERIENCE" des="My Resume" />
       </div>
       <div>
         <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
@@ -81,9 +80,19 @@ const Resume = () => {
       {skillData && <Skills />}
       {achievementData && <Achievement />}
       {experienceData && <Experience />}
- 
+
+      <button class="bg-[#141518] hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center" style={{marginTop:"50px"}}>
+        <svg
+          class="fill-current w-4 h-4 mr-2"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+        >
+          <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+        </svg>
+        <span>Download CV</span>
+      </button>
     </section>
   );
-}
+};
 
-export default Resume
+export default Resume;
